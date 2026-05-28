@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>風松の鶏ハム | 居酒屋店主が本気で作った</title>
+<title>風松フーズの鶏ハム | 居酒屋店主が本気で作った</title>
 <meta name="description" content="居酒屋15年の店主が監修した、しっとり、スパイス香る鶏ハム。冷凍庫にあれば夜の一品がすぐ完成。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -174,6 +174,39 @@
   background-size:cover;
   background-position:center;
 }
+
+/* 使用スパイス クロスセル */
+.lp-spice{background:#fff;padding:60px 20px}
+.lp-spice-lead{
+  text-align:center;font-size:14px;color:#555;
+  margin:-18px auto 34px;max-width:640px;line-height:1.9;
+}
+.lp-spice-grid{
+  display:grid;grid-template-columns:1fr;
+  gap:24px;max-width:300px;margin:0 auto;
+}
+.lp-spice-card{
+  display:block;text-decoration:none;color:inherit;
+  border:1px solid #e0d4b0;background:#fff;
+  padding:18px;text-align:center;
+  transition:box-shadow .2s,transform .2s;
+}
+.lp-spice-card:hover{box-shadow:0 6px 20px rgba(0,0,0,.1);transform:translateY(-3px)}
+.lp-spice-img{
+  aspect-ratio:1/1;background:#f2e9d2;
+  background-size:cover;background-position:center;margin-bottom:12px;
+}
+.lp-spice-name{
+  font-family:"Noto Serif JP",serif;
+  font-size:16px;font-weight:700;line-height:1.4;margin-bottom:10px;
+}
+.lp-spice-go{
+  display:inline-block;font-size:12px;color:#fff;
+  background:#8c6a3a;padding:7px 16px;letter-spacing:.05em;
+}
+.lp-spice-card:hover .lp-spice-go{background:#c8392f}
+.lp-spice-all{text-align:center;margin-top:24px;font-size:13px}
+.lp-spice-all a{color:#8c6a3a;font-weight:700}
 
 /* 食べ方 */
 .lp-howto-grid{
@@ -365,6 +398,10 @@
   .lp-section-title::before,.lp-section-title::after{width:24px;margin:0 10px}
   .lp-gallery,.lp-howto-grid{grid-template-columns:repeat(2,1fr)}
   .lp-konawari-grid{grid-template-columns:1fr;gap:16px}
+  .lp-spice-grid{gap:10px}
+  .lp-spice-card{padding:10px}
+  .lp-spice-name{font-size:13px}
+  .lp-spice-go{font-size:11px;padding:6px 10px}
   .lp-set-box{grid-template-columns:1fr;padding:24px}
   .lp-price{font-size:48px}
   .lp-info-grid{grid-template-columns:repeat(2,1fr)}
@@ -381,7 +418,7 @@
 <section class="lp-hero">
   <div class="lp-hero-inner">
     <div>
-      <div class="lp-logo">風松<small>KAZEMATSU</small></div>
+      <div class="lp-logo">風松フーズ<small>KAZEMATSU FOODS</small></div>
       <div class="lp-ribbon">居酒屋店主が本気で作った</div>
       <h1 class="lp-serif">鶏ハム</h1>
       <p class="lp-hero-sub">しっとり、スパイス香る。<br>そのまま切るだけで一品になる鶏ハム。</p>
@@ -400,7 +437,7 @@
         </div>
       </div>
     </div>
-    <div class="lp-hero-img" style="background-image:url('https://placehold.co/600x560/2a2a2a/c9a86b?text=%E5%95%86%E5%93%81%E3%83%A1%E3%82%A4%E3%83%B3%E5%86%99%E7%9C%9F')"></div>
+    <div class="lp-hero-img" style="background-image:url('images/hero.jpg')"></div>
   </div>
 </section>
 
@@ -410,23 +447,23 @@
     <h2 class="lp-section-title">商品イメージ</h2>
     <div class="lp-gallery">
       <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=7%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88')"></div>
+        <div class="lp-gallery-img" style="background-image:url('images/gallery-set.jpg')"></div>
         <div class="lp-gallery-caption">7個セットでお届け</div>
       </div>
       <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E3%81%97%E3%81%A3%E3%81%A8%E3%82%8A')"></div>
+        <div class="lp-gallery-img" style="background-image:url('images/gallery-shittori.jpg')"></div>
         <div class="lp-gallery-caption">しっとりやわらか</div>
       </div>
       <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E4%B8%80%E5%93%81%E3%81%AB')"></div>
+        <div class="lp-gallery-img" style="background-image:url('images/gallery-ippin.jpg')"></div>
         <div class="lp-gallery-caption">そのままで一品に</div>
       </div>
       <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E3%81%8A%E3%81%A4%E3%81%BE%E3%81%BF')"></div>
+        <div class="lp-gallery-img" style="background-image:url('images/gallery-otsumami.jpg')"></div>
         <div class="lp-gallery-caption">おつまみにも最高</div>
       </div>
       <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E5%86%B7%E5%87%8D')"></div>
+        <div class="lp-gallery-img" style="background-image:url('images/package.jpg')"></div>
         <div class="lp-gallery-caption">冷凍でお届けします</div>
       </div>
     </div>
@@ -436,26 +473,41 @@
 <!-- ===== 3つのこだわり ===== -->
 <section class="lp-konawari">
   <div class="lp-section-inner">
-    <h2 class="lp-section-title">風松の鶏ハム&nbsp;&nbsp;3つのこだわり</h2>
+    <h2 class="lp-section-title">風松フーズの鶏ハム&nbsp;&nbsp;3つのこだわり</h2>
     <div class="lp-konawari-grid">
       <div class="lp-konawari-card">
         <div class="lp-konawari-num">こだわり<strong>01</strong></div>
         <h3>居酒屋15年の店主が監修</h3>
         <p>居酒屋を15年営む店主が、試作を重ねて辿り着いた自信作。お酒に合う味わいを追求しました。</p>
-        <div class="lp-konawari-img" style="background-image:url('https://placehold.co/600x340/ccc/333?text=%E5%BA%97%E4%B8%BB%E5%86%99%E7%9C%9F')"></div>
+        <div class="lp-konawari-img" style="background-image:url('images/kodawari-chef.jpg')"></div>
       </div>
       <div class="lp-konawari-card">
         <div class="lp-konawari-num">こだわり<strong>02</strong></div>
         <h3>風松スパイス使用</h3>
         <p>オリジナルでブレンドした風松スパイス。鶏の旨みを引き立て、香り豊かに仕上げました。</p>
-        <div class="lp-konawari-img" style="background-image:url('https://placehold.co/600x340/ccc/333?text=%E3%82%B9%E3%83%91%E3%82%A4%E3%82%B9')"></div>
+        <div class="lp-konawari-img" style="background-image:url('images/kodawari-spice.jpg')"></div>
       </div>
       <div class="lp-konawari-card">
         <div class="lp-konawari-num">こだわり<strong>03</strong></div>
         <h3>認証工場で製造</h3>
         <p>安心・安全な認証工場で製造。徹底した衛生管理のもと、丁寧に作っています。</p>
-        <div class="lp-konawari-img" style="background-image:url('https://placehold.co/600x340/ccc/333?text=%E5%B7%A5%E5%A0%B4')"></div>
+        <div class="lp-konawari-img" style="background-image:url('images/kodawari-factory.jpg')"></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== この鶏ハムに使っているスパイス(クロスセル) ===== -->
+<section class="lp-spice">
+  <div class="lp-section-inner">
+    <h2 class="lp-section-title">この鶏ハムに使っているスパイス</h2>
+    <p class="lp-spice-lead">風松フーズの鶏ハムは、自社ブレンドの「風松スパイス」で味付けしています。<br>同じ味をご家庭で。お料理にもキャンプにもどうぞ。</p>
+    <div class="lp-spice-grid">
+      <a class="lp-spice-card" href="https://kazeworks831.thebase.in/items/89607574">
+        <div class="lp-spice-img" style="background-image:url('https://baseec-img-mng.akamaized.net/images/item/origin/ff5d74200936849a20fbef8217fe657e.jpg?imformat=generic&q=90&im=Resize,width=400,type=normal')"></div>
+        <div class="lp-spice-name">KAZEMATSU SPICE<br>うま味</div>
+        <span class="lp-spice-go">商品を見る →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -466,31 +518,31 @@
     <h2 class="lp-section-title">いろいろな食べ方で楽しめます</h2>
     <div class="lp-howto-grid">
       <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E3%81%9D%E3%81%AE%E3%81%BE%E3%81%BE')"></div>
+        <div class="lp-howto-img" style="background-image:url('images/howto-sonomama.jpg')"></div>
         <div class="lp-howto-icon">✋</div>
         <h4>そのままで</h4>
         <p>スライスするだけでしっとり美味しい</p>
       </div>
       <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E3%82%B5%E3%83%A9%E3%83%80')"></div>
+        <div class="lp-howto-img" style="background-image:url('images/howto-salad.jpg')"></div>
         <div class="lp-howto-icon">🥗</div>
         <h4>サラダに</h4>
         <p>野菜と合わせてヘルシーに</p>
       </div>
       <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E3%81%8A%E3%81%A4%E3%81%BE%E3%81%BF')"></div>
+        <div class="lp-howto-img" style="background-image:url('images/howto-otsumami.jpg')"></div>
         <div class="lp-howto-icon">🍺</div>
         <h4>おつまみに</h4>
         <p>お酒との相性抜群!すぐに一品完成</p>
       </div>
       <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E3%82%B5%E3%83%B3%E3%83%89')"></div>
+        <div class="lp-howto-img" style="background-image:url('images/howto-sand.jpg')"></div>
         <div class="lp-howto-icon">🥪</div>
         <h4>サンドに</h4>
         <p>パンに挟んでボリューム満点</p>
       </div>
       <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://placehold.co/400x400/eee/333?text=%E3%82%BD%E3%83%BC%E3%82%B9')"></div>
+        <div class="lp-howto-img" style="background-image:url('images/howto-sauce.jpg')"></div>
         <div class="lp-howto-icon">🥄</div>
         <h4>ソースアレンジ</h4>
         <p>お好みのソースで味変も楽しめる</p>
@@ -511,7 +563,7 @@
           <li>鶏ハム(約200g)×7個</li>
           <li>オリジナルスパイス使用</li>
         </ul>
-        <div class="lp-set-img" style="background-image:url('https://placehold.co/600x340/fff/666?text=%E3%82%BB%E3%83%83%E3%83%88%E5%86%99%E7%9C%9F')"></div>
+        <div class="lp-set-img" style="background-image:url('images/package.jpg')"></div>
         <p class="lp-set-note">※パッケージは変更になる場合があります。</p>
       </div>
       <div class="lp-price-box">
@@ -562,7 +614,7 @@
 <!-- ===== 業務用・卸販売 ===== -->
 <section class="lp-b2b">
   <div class="lp-b2b-inner">
-    <div class="lp-b2b-img" style="background-image:url('https://placehold.co/600x340/2a2a2a/c9a86b?text=%E5%BA%97%E8%88%97%E5%86%99%E7%9C%9F')"></div>
+    <div class="lp-b2b-img" style="background-image:url('images/b2b.jpg')"></div>
     <div>
       <h3>業務用・卸販売も承ります</h3>
       <p>飲食店・スーパー・バーなどの事業者様へ。<br>業務用・卸販売も対応しております。<br>ご希望の方はお気軽にお問い合わせください。</p>
@@ -577,9 +629,9 @@
 </section>
 
 <!-- ===== 最終 CTA ===== -->
-<section class="lp-final" style="background-image:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://placehold.co/1080x340/1a1a1a/666?text=%E8%83%8C%E6%99%AF%E5%86%99%E7%9C%9F')">
+<section class="lp-final" style="background-image:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('images/final.jpg')">
   <div class="lp-final-inner">
-    <h2 class="lp-serif">冷凍庫にあると、夜の一品がすぐ完成。<br>風松の鶏ハムを、ぜひご家庭で。</h2>
+    <h2 class="lp-serif">冷凍庫にあると、夜の一品がすぐ完成。<br>風松フーズの鶏ハムを、ぜひご家庭で。</h2>
     <a href="#" class="lp-cta">カートに入れる ▶</a>
   </div>
 </section>

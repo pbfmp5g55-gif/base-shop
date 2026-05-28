@@ -32,3 +32,10 @@ desktop.ini
 
 # Local Claude settings (keep optional)
 # .claude/settings.local.json
+
+# 共有用zip（ビルド成果物）
+*.zip
+
+# LP未使用の画像（クライアント参考コンプ・生成時のコラージュ）
+images/ChatGPT*.png
+images/reference-comp.jpg
