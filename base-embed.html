@@ -88,7 +88,8 @@
   width:100%;
   aspect-ratio:1.05/1;
   background:#222;
-  background-size:cover;
+  background-size:contain;
+  background-repeat:no-repeat;
   background-position:center;
 }
 
@@ -113,21 +114,29 @@
   margin:0 18px;
 }
 
-/* 商品イメージ4枚 */
+/* 商品イメージ3カード */
 .lp-gallery{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:20px;
 }
-.lp-gallery-item{text-align:center}
+.lp-gallery-item{
+  background:#fff;
+  padding:14px;
+  border:1px solid #e0d4b0;
+  border-radius:8px;
+  box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
 .lp-gallery-img{
-  aspect-ratio:1/1;
-  background:#eee;
-  background-size:cover;
+  width:100%;
+  aspect-ratio:4/5;
+  background:#fff;
+  background-size:contain;
+  background-repeat:no-repeat;
   background-position:center;
-  margin-bottom:8px;
+  border-radius:4px;
 }
-.lp-gallery-caption{font-size:13px;color:#555}
 
 /* 3つのこだわり */
 .lp-konawari{background:#f7eed7;padding:60px 20px}
@@ -413,7 +422,7 @@
   .lp-section{padding:40px 18px}
   .lp-section-title{font-size:18px}
   .lp-section-title::before,.lp-section-title::after{width:24px;margin:0 10px}
-  .lp-gallery,.lp-howto-grid{grid-template-columns:repeat(2,1fr)}
+  .lp-gallery{grid-template-columns:1fr}
   .lp-konawari-grid{grid-template-columns:1fr;gap:16px}
   .lp-spice-grid{gap:10px}
   .lp-spice-card{padding:10px}
@@ -454,7 +463,7 @@
         </div>
       </div>
     </div>
-    <div class="lp-hero-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/hero.jpg')"></div>
+    <div class="lp-hero-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/hero-pkg.jpg')"></div>
   </div>
 </section>
 
@@ -464,20 +473,13 @@
     <h2 class="lp-section-title">商品イメージ</h2>
     <div class="lp-gallery">
       <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/gallery-set.jpg')"></div>
-        <div class="lp-gallery-caption">7個セットでお届け</div>
+        <div class="lp-gallery-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/product1.jpg')"></div>
       </div>
       <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/gallery-shittori.jpg')"></div>
-        <div class="lp-gallery-caption">しっとりやわらか</div>
+        <div class="lp-gallery-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/product2.jpg')"></div>
       </div>
       <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/gallery-ippin.jpg')"></div>
-        <div class="lp-gallery-caption">そのままで一品に</div>
-      </div>
-      <div class="lp-gallery-item">
-        <div class="lp-gallery-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/package.jpg')"></div>
-        <div class="lp-gallery-caption">冷凍でお届けします</div>
+        <div class="lp-gallery-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/product3.jpg')"></div>
       </div>
     </div>
   </div>
@@ -525,39 +527,6 @@
   </div>
 </section>
 
-<!-- ===== 食べ方 ===== -->
-<section class="lp-section">
-  <div class="lp-section-inner">
-    <h2 class="lp-section-title">いろいろな食べ方で楽しめます</h2>
-    <div class="lp-howto-grid">
-      <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/howto-sonomama.jpg')"></div>
-        <div class="lp-howto-icon">切</div>
-        <h4>そのままで</h4>
-        <p>スライスするだけでしっとり美味しい</p>
-      </div>
-      <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/howto-salad.jpg')"></div>
-        <div class="lp-howto-icon">菜</div>
-        <h4>サラダに</h4>
-        <p>野菜と合わせてヘルシーに</p>
-      </div>
-      <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/howto-otsumami.jpg')"></div>
-        <div class="lp-howto-icon">酒</div>
-        <h4>おつまみに</h4>
-        <p>お酒との相性抜群!すぐに一品完成</p>
-      </div>
-      <div class="lp-howto-item">
-        <div class="lp-howto-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/howto-sand.jpg')"></div>
-        <div class="lp-howto-icon">挟</div>
-        <h4>サンドに</h4>
-        <p>パンに挟んでボリューム満点</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ===== セット内容 ===== -->
 <section class="lp-set">
   <div class="lp-section-inner">
@@ -565,12 +534,12 @@
       <div>
         <div class="lp-set-label">セット内容</div>
         <div class="lp-set-name">鶏ハム&nbsp;&nbsp;7個セット</div>
-        <div class="lp-set-spec">1個あたり約200g</div>
+        <div class="lp-set-spec">1個あたり約80g</div>
         <ul>
-          <li>鶏ハム(約200g)×7個</li>
+          <li>鶏ハム(約80g)×7個</li>
           <li>オリジナルスパイス使用</li>
         </ul>
-        <div class="lp-set-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/package.jpg')"></div>
+        <div class="lp-set-img" style="background-image:url('https://pbfmp5g55-gif.github.io/base-shop/images/giftbox.jpg')"></div>
         <p class="lp-set-note">※パッケージは変更になる場合があります。</p>
       </div>
       <div class="lp-price-box">
